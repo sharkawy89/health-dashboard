@@ -1,0 +1,15 @@
+{
+  "name": "health-dashboard",
+  "version": "1.0.0",
+  "build": {
+    "env": {
+      "REACT_APP_NAME": "@mediflow-dash-name",
+      "REACT_APP_VERSION": "@mediflow-dash-version",
+      "REACT_APP_API_URL": "@mediflow-api-url",
+      "REACT_APP_API_TIMEOUT": "@mediflow-api-timeout",
+      "REACT_APP_ENV": "@mediflow-env",
+      "REACT_APP_ENABLE_MOCK_DATA": "@mediflow-enable-mock-data",
+      "REACT_APP_ENABLE_ANALYTICS": "@mediflow-enable-analytics"
+    }
+  }
+}
