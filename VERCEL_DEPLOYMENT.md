@@ -1,4 +1,4 @@
-# MediFlow Dash - Vercel Deployment Guide
+# EL kabsola - Vercel Deployment Guide
 
 ## 🚀 Quick Deploy to Vercel
 
@@ -45,7 +45,7 @@ Add these in **Vercel Dashboard** → **Settings** → **Environment Variables**
 ### Production Variables
 
 ```
-REACT_APP_NAME=MediFlow Dash
+REACT_APP_NAME=EL kabsola
 REACT_APP_VERSION=1.0.0
 REACT_APP_API_URL=https://your-api-domain.com/api
 REACT_APP_API_TIMEOUT=5000
@@ -59,7 +59,7 @@ REACT_APP_DATE_FORMAT=MMM dd, yyyy
 ### Development/Preview Variables (Optional)
 
 ```
-REACT_APP_NAME=MediFlow Dash (Dev)
+REACT_APP_NAME=EL kabsola (Dev)
 REACT_APP_ENV=development
 REACT_APP_ENABLE_MOCK_DATA=true
 ```
@@ -99,7 +99,7 @@ npm install
 ## 🌍 Custom Domain (Optional)
 
 1. Go to **Vercel Dashboard** → **Settings** → **Domains**
-2. Add your custom domain (e.g., `mediflow.yourdomain.com`)
+2. Add your custom domain (e.g., `elkabsola.yourdomain.com`)
 3. Update DNS records as instructed
 4. SSL is automatic
 
@@ -109,7 +109,7 @@ npm install
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `REACT_APP_NAME` | Application name | MediFlow Dash |
+| `REACT_APP_NAME` | Application name | EL kabsola |
 | `REACT_APP_VERSION` | App version | 1.0.0 |
 | `REACT_APP_API_URL` | Backend API URL | localhost:3000/api |
 | `REACT_APP_API_TIMEOUT` | API timeout (ms) | 5000 |
@@ -181,4 +181,4 @@ vercel --force
 
 ---
 
-*Your MediFlow Dash app is ready for deployment! 🚀*
+*Your EL kabsola app is ready for deployment! 🚀*

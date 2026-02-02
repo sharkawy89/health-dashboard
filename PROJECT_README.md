@@ -1,4 +1,4 @@
-# MediFlow Dash - Medical Clinic Management System
+# EL kabsola - Medical Clinic Management System
 
 A professional React-based dashboard for medical clinics to manage patients, appointments, and medical records.
 

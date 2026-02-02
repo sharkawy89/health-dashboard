@@ -393,4 +393,4 @@ return (
 
 ---
 
-*This guide covers all the components and utilities available in MediFlow Dash*
+*This guide covers all the components and utilities available in EL kabsola*

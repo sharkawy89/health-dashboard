@@ -28,7 +28,7 @@ const Sidebar = () => {
       <div className="px-6 py-5 border-b border-slate-200">
         <h1 className="text-2xl font-bold text-primary flex items-center gap-2">
           <Activity className="h-8 w-8" />
-          MediFlow
+          EL kabsola
         </h1>
         <p className="text-sm text-slate-500 mt-1">Clinic Management</p>
       </div>

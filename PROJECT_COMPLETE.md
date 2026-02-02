@@ -1,4 +1,4 @@
-# 🏥 MediFlow Dash - Project Complete!
+# 🏥 EL kabsola - Project Complete!
 
 ## ✅ Project Status: READY FOR USE
 
@@ -117,7 +117,7 @@ The app will open at: **http://localhost:3000**
 ## 🎯 Navigation Structure
 
 ```
-MediFlow Dash
+EL kabsola
 ├── Dashboard (/)
 ├── Patients (/patients)
 │   ├── Patient List
@@ -292,7 +292,7 @@ npm start
 
 ## 🎉 Congratulations!
 
-Your MediFlow Dash application is **ready to use**! 
+Your EL kabsola application is **ready to use**! 
 
 Start the development server and explore all the features. The application includes realistic mock data so you can see how everything works together.
 
