@@ -69,12 +69,12 @@ const Appointments = () => {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
         <div>
-          <h1 className="text-3xl font-bold text-slate-900">Appointments</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold text-slate-900">Appointments</h1>
           <p className="text-slate-600 mt-1">Manage patient appointments</p>
         </div>
-        <Button onClick={() => setIsModalOpen(true)}>
+        <Button onClick={() => setIsModalOpen(true)} className="w-full sm:w-auto">
           <Plus className="h-5 w-5 mr-2" />
           New Appointment
         </Button>
@@ -82,22 +82,25 @@ const Appointments = () => {
       
       {/* Filter Tabs */}
       <Card>
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-2 sm:gap-4">
           <Button
             variant={filter === 'all' ? 'primary' : 'secondary'}
             onClick={() => setFilter('all')}
+            className="flex-1 sm:flex-none"
           >
             All Appointments
           </Button>
           <Button
             variant={filter === 'upcoming' ? 'primary' : 'secondary'}
             onClick={() => setFilter('upcoming')}
+            className="flex-1 sm:flex-none"
           >
             Upcoming
           </Button>
           <Button
             variant={filter === 'past' ? 'primary' : 'secondary'}
             onClick={() => setFilter('past')}
+            className="flex-1 sm:flex-none"
           >
             Past
           </Button>

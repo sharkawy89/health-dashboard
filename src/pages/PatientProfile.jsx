@@ -31,15 +31,15 @@ const PatientProfile = () => {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex items-center gap-4">
-        <Button variant="secondary" onClick={() => navigate('/patients')}>
+      <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+        <Button variant="secondary" onClick={() => navigate('/patients')} className="w-fit">
           <ArrowLeft className="h-5 w-5" />
         </Button>
         <div className="flex-1">
-          <h1 className="text-3xl font-bold text-slate-900">Patient Profile</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold text-slate-900">Patient Profile</h1>
           <p className="text-slate-600 mt-1">View and manage patient information</p>
         </div>
-        <Button onClick={() => navigate(`/patients/${id}/edit`)}>
+        <Button onClick={() => navigate(`/patients/${id}/edit`)} className="w-full sm:w-auto">
           <Edit className="h-5 w-5 mr-2" />
           Edit Profile
         </Button>
@@ -47,7 +47,7 @@ const PatientProfile = () => {
       
       {/* Patient Info Card */}
       <Card>
-        <div className="flex items-start gap-6">
+        <div className="flex flex-col sm:flex-row items-start gap-6">
           <div className="h-24 w-24 rounded-full bg-primary-100 flex items-center justify-center">
             <span className="text-primary font-bold text-3xl">
               {patient.fullName.split(' ').map(n => n[0]).join('').slice(0, 2)}

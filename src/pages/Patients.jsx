@@ -84,12 +84,12 @@ const Patients = () => {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
         <div>
-          <h1 className="text-3xl font-bold text-slate-900">Patients</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold text-slate-900">Patients</h1>
           <p className="text-slate-600 mt-1">Manage all patient records</p>
         </div>
-        <Button onClick={() => navigate('/patients/new')}>
+        <Button onClick={() => navigate('/patients/new')} className="w-full sm:w-auto">
           <Plus className="h-5 w-5 mr-2" />
           Add Patient
         </Button>
@@ -97,7 +97,7 @@ const Patients = () => {
       
       {/* Filters */}
       <Card>
-        <div className="flex gap-4">
+        <div className="flex flex-col sm:flex-row gap-4">
           <div className="flex-1">
             <div className="relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-slate-400" />

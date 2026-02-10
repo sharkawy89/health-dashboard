@@ -59,12 +59,12 @@ const PatientForm = () => {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex items-center gap-4">
-        <Button variant="secondary" onClick={() => navigate('/patients')}>
+      <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+        <Button variant="secondary" onClick={() => navigate('/patients')} className="w-fit">
           <ArrowLeft className="h-5 w-5" />
         </Button>
         <div>
-          <h1 className="text-3xl font-bold text-slate-900">
+          <h1 className="text-2xl sm:text-3xl font-bold text-slate-900">
             {isEditMode ? 'Edit Patient' : 'Add New Patient'}
           </h1>
           <p className="text-slate-600 mt-1">

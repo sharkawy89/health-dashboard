@@ -23,7 +23,7 @@ const Dashboard = () => {
     <div className="space-y-6">
       {/* Page Header */}
       <div>
-        <h1 className="text-3xl font-bold text-slate-900">Dashboard</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold text-slate-900">Dashboard</h1>
         <p className="text-slate-600 mt-1">Welcome back, Dr. Ahmed Hassan</p>
       </div>
       

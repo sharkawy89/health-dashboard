@@ -6,11 +6,12 @@ import {
   Calendar, 
   FileText, 
   Settings,
-  Activity
+  Activity,
+  X
 } from 'lucide-react';
 import { cn } from '../utils/cn';
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, onClose }) => {
   const location = useLocation();
   
   const menuItems = [
@@ -23,14 +24,26 @@ const Sidebar = () => {
   ];
   
   return (
-    <aside className="fixed left-0 top-0 h-full w-64 bg-white border-r border-slate-200 flex flex-col">
+    <aside className={cn(
+      "fixed left-0 top-0 h-full w-64 bg-white border-r border-slate-200 flex flex-col z-40 transition-transform duration-300 ease-in-out",
+      "lg:translate-x-0",
+      isOpen ? "translate-x-0" : "-translate-x-full"
+    )}>
       {/* Logo */}
-      <div className="px-6 py-5 border-b border-slate-200">
-        <h1 className="text-2xl font-bold text-primary flex items-center gap-2">
-          <Activity className="h-8 w-8" />
-          EL kabsola
-        </h1>
-        <p className="text-sm text-slate-500 mt-1">Clinic Management</p>
+      <div className="px-6 py-5 border-b border-slate-200 flex items-center justify-between">
+        <div>
+          <h1 className="text-2xl font-bold text-primary flex items-center gap-2">
+            <Activity className="h-8 w-8" />
+            EL3eyada
+          </h1>
+          <p className="text-sm text-slate-500 mt-1">Clinic Management</p>
+        </div>
+        <button 
+          onClick={onClose}
+          className="lg:hidden text-slate-600 hover:text-slate-900"
+        >
+          <X className="h-6 w-6" />
+        </button>
       </div>
       
       {/* Navigation */}
@@ -44,6 +57,7 @@ const Sidebar = () => {
               <li key={item.path}>
                 <Link
                   to={item.path}
+                  onClick={onClose}
                   className={cn(
                     'flex items-center gap-3 px-4 py-3 rounded-lg transition-colors',
                     isActive 

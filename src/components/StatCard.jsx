@@ -11,20 +11,20 @@ export const StatCard = ({ title, value, icon: Icon, trend, trendValue, color = 
   };
   
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-slate-200 p-6">
+    <div className="bg-white rounded-lg shadow-sm border border-slate-200 p-4 sm:p-6">
       <div className="flex items-center justify-between">
-        <div>
-          <p className="text-sm font-medium text-slate-600">{title}</p>
-          <p className="text-3xl font-bold text-slate-900 mt-2">{value}</p>
+        <div className="flex-1">
+          <p className="text-xs sm:text-sm font-medium text-slate-600">{title}</p>
+          <p className="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">{value}</p>
           {trend && (
             <div className="flex items-center gap-1 mt-2">
               {trend === 'up' ? (
-                <TrendingUp className="h-4 w-4 text-success" />
+                <TrendingUp className="h-3 w-3 sm:h-4 sm:w-4 text-success" />
               ) : (
-                <TrendingDown className="h-4 w-4 text-danger" />
+                <TrendingDown className="h-3 w-3 sm:h-4 sm:w-4 text-danger" />
               )}
               <span className={cn(
-                'text-sm font-medium',
+                'text-xs sm:text-sm font-medium',
                 trend === 'up' ? 'text-success' : 'text-danger'
               )}>
                 {trendValue}
@@ -32,8 +32,8 @@ export const StatCard = ({ title, value, icon: Icon, trend, trendValue, color = 
             </div>
           )}
         </div>
-        <div className={cn('p-3 rounded-full', colors[color])}>
-          <Icon className="h-6 w-6" />
+        <div className={cn('p-2.5 sm:p-3 rounded-full', colors[color])}>
+          <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
         </div>
       </div>
     </div>
