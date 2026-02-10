@@ -1,6 +1,6 @@
 {
   "name": "el3eyada",
-  "version": "1.0.0",
+  "version": 2,
   "build": {
     "env": {
       "REACT_APP_NAME": "@el3eyada-name",
